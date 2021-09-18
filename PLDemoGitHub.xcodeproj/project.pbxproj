@@ -13,6 +13,8 @@
 		9CC3ED2C26F63A7A009BD6E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC3ED2A26F63A7A009BD6E7 /* Main.storyboard */; };
 		9CC3ED2E26F63A82009BD6E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC3ED2D26F63A82009BD6E7 /* Assets.xcassets */; };
 		9CC3ED3126F63A82009BD6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC3ED2F26F63A82009BD6E7 /* LaunchScreen.storyboard */; };
+		9CC3ED3B26F63E91009BD6E7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED3A26F63E91009BD6E7 /* APIService.swift */; };
+		9CC3ED3D26F63F6C009BD6E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED3C26F63F6C009BD6E7 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9CC3ED2D26F63A82009BD6E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CC3ED3026F63A82009BD6E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CC3ED3226F63A82009BD6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC3ED3A26F63E91009BD6E7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		9CC3ED3C26F63F6C009BD6E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				9CC3ED2D26F63A82009BD6E7 /* Assets.xcassets */,
 				9CC3ED2F26F63A82009BD6E7 /* LaunchScreen.storyboard */,
 				9CC3ED3226F63A82009BD6E7 /* Info.plist */,
+				9CC3ED3A26F63E91009BD6E7 /* APIService.swift */,
+				9CC3ED3C26F63F6C009BD6E7 /* User.swift */,
 			);
 			path = PLDemoGitHub;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			files = (
 				9CC3ED2926F63A79009BD6E7 /* ViewController.swift in Sources */,
 				9CC3ED2526F63A79009BD6E7 /* AppDelegate.swift in Sources */,
+				9CC3ED3D26F63F6C009BD6E7 /* User.swift in Sources */,
+				9CC3ED3B26F63E91009BD6E7 /* APIService.swift in Sources */,
 				9CC3ED2726F63A79009BD6E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K2D8EVZ5V;
 				INFOPLIST_FILE = PLDemoGitHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5K2D8EVZ5V;
 				INFOPLIST_FILE = PLDemoGitHub/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
