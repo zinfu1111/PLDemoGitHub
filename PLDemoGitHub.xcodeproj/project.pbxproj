@@ -16,6 +16,7 @@
 		9CC3ED3B26F63E91009BD6E7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED3A26F63E91009BD6E7 /* APIService.swift */; };
 		9CC3ED3D26F63F6C009BD6E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED3C26F63F6C009BD6E7 /* User.swift */; };
 		9CC3ED3F26F78526009BD6E7 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */; };
+		9CC3ED4126F78B06009BD6E7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9CC3ED3A26F63E91009BD6E7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		9CC3ED3C26F63F6C009BD6E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
+		9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				9CC3ED3A26F63E91009BD6E7 /* APIService.swift */,
 				9CC3ED3C26F63F6C009BD6E7 /* User.swift */,
 				9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */,
+				9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */,
 			);
 			path = PLDemoGitHub;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				9CC3ED3D26F63F6C009BD6E7 /* User.swift in Sources */,
 				9CC3ED3B26F63E91009BD6E7 /* APIService.swift in Sources */,
 				9CC3ED2726F63A79009BD6E7 /* SceneDelegate.swift in Sources */,
+				9CC3ED4126F78B06009BD6E7 /* BaseViewController.swift in Sources */,
 				9CC3ED3F26F78526009BD6E7 /* MineViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
