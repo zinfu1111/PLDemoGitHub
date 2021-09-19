@@ -20,12 +20,48 @@ class MineViewController: BaseViewController {
 
         // Do any additional setup after loading the view.
         
+        updateUI()
         
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         photoImageView.layer.cornerRadius = photoImageView.frame.width/2
+    }
+    
+    func updateUI() {
+        
+        //TODO: set photo
+        setupPhotoImageView()
+        
+        //TODO: set name
+        if let name = user.name {
+            nameLabel.text = name
+        }else{
+            nameLabel.isHidden = true
+        }
+        
+        //TODO: set login
+        loginLabel.text = user.login
+        
+        //TODO: set follow
+        setupFollowLabel(followers: "\(user.followers)", following: "\(user.following)")
+        
+        //TODO: set email
+        if let email = user.email {
+            setupEmailLabel(mail: email)
+        }else{
+            emailLabel.isHidden = true
+        }
+    }
+    
+    func setupPhotoImageView() {
+        PhotoManager.shared.downloadImage(url: user.avatar_url) {[weak self] image in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.photoImageView.image = image
+            }
+        }
     }
 
     
