@@ -7,7 +7,10 @@
 
 import Foundation
 
+var userManager = User()
+
 struct User {
+    
     struct List:Codable {
         let login:String
         let id:Int

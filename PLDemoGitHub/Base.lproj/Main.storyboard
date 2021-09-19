@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="N9f-Wt-muI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -48,7 +48,7 @@
                                     <constraint firstItem="yrK-Uv-6fF" firstAttribute="centerX" secondItem="xcv-iX-IRU" secondAttribute="centerX" id="grq-KL-8Fq"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mail" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OEo-Qw-zTY">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="OEo-Qw-zTY">
                                 <rect key="frame" x="30" y="198" width="94" height="91.5"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
@@ -56,19 +56,19 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="z98-Zo-ry1">
-                                <rect key="frame" x="30" y="301" width="152" height="130"/>
+                                <rect key="frame" x="30" y="301" width="345" height="123"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="MfI-SI-WtB">
-                                        <rect key="frame" x="0.0" y="0.0" width="152" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="345" height="47"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a8K-iP-jWC">
-                                                <rect key="frame" x="0.0" y="0.0" width="152" height="36"/>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="345" height="29"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPn-If-De0">
-                                                <rect key="frame" x="0.0" y="36" width="152" height="18"/>
+                                                <rect key="frame" x="0.0" y="29" width="345" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -76,13 +76,13 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lcY-wj-ZvN">
-                                        <rect key="frame" x="0.0" y="74" width="152" height="18"/>
+                                        <rect key="frame" x="0.0" y="67" width="345" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="followers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSh-wd-2Hx">
-                                        <rect key="frame" x="0.0" y="112" width="152" height="18"/>
+                                        <rect key="frame" x="0.0" y="105" width="345" height="18"/>
                                         <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -101,6 +101,7 @@
                             <constraint firstItem="OEo-Qw-zTY" firstAttribute="leading" secondItem="BB8-Y9-3ht" secondAttribute="leading" constant="30" id="jbO-1q-gfc"/>
                             <constraint firstItem="z98-Zo-ry1" firstAttribute="top" secondItem="OEo-Qw-zTY" secondAttribute="bottom" constant="10" id="nm7-nY-M7L"/>
                             <constraint firstItem="OEo-Qw-zTY" firstAttribute="width" secondItem="xcv-iX-IRU" secondAttribute="width" multiplier="0.25" id="x3K-GV-kCR"/>
+                            <constraint firstItem="BB8-Y9-3ht" firstAttribute="trailing" secondItem="z98-Zo-ry1" secondAttribute="trailing" id="ygI-8l-Ib5"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="blx-Th-IgY"/>
@@ -119,7 +120,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="TqW-er-wDz">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="N9f-Wt-muI" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N9f-Wt-muI" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ssf-tX-szv">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -156,9 +157,10 @@
             <point key="canvasLocation" x="1444" y="-127.28635682158921"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="mail" catalog="system" width="128" height="93"/>
+        <image name="photo" catalog="system" width="128" height="93"/>
         <image name="pngegg" width="512" height="512"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

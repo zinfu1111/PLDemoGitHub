@@ -7,6 +7,8 @@
 
 import UIKit
 
+var user:User.Detail!
+
 class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
