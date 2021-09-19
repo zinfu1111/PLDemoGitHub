@@ -18,6 +18,8 @@
 		9CC3ED3F26F78526009BD6E7 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */; };
 		9CC3ED4126F78B06009BD6E7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */; };
 		9CC3ED4326F7B61F009BD6E7 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4226F7B61F009BD6E7 /* PhotoManager.swift */; };
+		9CC3ED4526F7BD20009BD6E7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4426F7BD20009BD6E7 /* UserCell.swift */; };
+		9CC3ED4926F7BF28009BD6E7 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9CC3ED4226F7B61F009BD6E7 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
+		9CC3ED4426F7BD20009BD6E7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,20 +70,62 @@
 		9CC3ED2326F63A79009BD6E7 /* PLDemoGitHub */ = {
 			isa = PBXGroup;
 			children = (
+				9CC3ED4E26F7BF88009BD6E7 /* Resource */,
+				9CC3ED4D26F7BF71009BD6E7 /* Models */,
+				9CC3ED4C26F7BF64009BD6E7 /* Views */,
+				9CC3ED4B26F7BF51009BD6E7 /* Helper */,
+				9CC3ED3226F63A82009BD6E7 /* Info.plist */,
+				9CC3ED4A26F7BF33009BD6E7 /* Controllers */,
+			);
+			path = PLDemoGitHub;
+			sourceTree = "<group>";
+		};
+		9CC3ED4A26F7BF33009BD6E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */,
+				9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */,
+				9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9CC3ED4B26F7BF51009BD6E7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				9CC3ED3A26F63E91009BD6E7 /* APIService.swift */,
+				9CC3ED4226F7B61F009BD6E7 /* PhotoManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		9CC3ED4C26F7BF64009BD6E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9CC3ED4426F7BD20009BD6E7 /* UserCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9CC3ED4D26F7BF71009BD6E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CC3ED3C26F63F6C009BD6E7 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9CC3ED4E26F7BF88009BD6E7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
 				9CC3ED2426F63A79009BD6E7 /* AppDelegate.swift */,
 				9CC3ED2626F63A79009BD6E7 /* SceneDelegate.swift */,
 				9CC3ED2826F63A79009BD6E7 /* ViewController.swift */,
 				9CC3ED2A26F63A7A009BD6E7 /* Main.storyboard */,
 				9CC3ED2D26F63A82009BD6E7 /* Assets.xcassets */,
 				9CC3ED2F26F63A82009BD6E7 /* LaunchScreen.storyboard */,
-				9CC3ED3226F63A82009BD6E7 /* Info.plist */,
-				9CC3ED3A26F63E91009BD6E7 /* APIService.swift */,
-				9CC3ED3C26F63F6C009BD6E7 /* User.swift */,
-				9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */,
-				9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */,
-				9CC3ED4226F7B61F009BD6E7 /* PhotoManager.swift */,
 			);
-			path = PLDemoGitHub;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +203,9 @@
 				9CC3ED4326F7B61F009BD6E7 /* PhotoManager.swift in Sources */,
 				9CC3ED3D26F63F6C009BD6E7 /* User.swift in Sources */,
 				9CC3ED3B26F63E91009BD6E7 /* APIService.swift in Sources */,
+				9CC3ED4526F7BD20009BD6E7 /* UserCell.swift in Sources */,
 				9CC3ED2726F63A79009BD6E7 /* SceneDelegate.swift in Sources */,
+				9CC3ED4926F7BF28009BD6E7 /* UsersViewController.swift in Sources */,
 				9CC3ED4126F78B06009BD6E7 /* BaseViewController.swift in Sources */,
 				9CC3ED3F26F78526009BD6E7 /* MineViewController.swift in Sources */,
 			);
