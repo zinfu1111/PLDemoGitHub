@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,8 @@
 		9CC3ED4526F7BD20009BD6E7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4426F7BD20009BD6E7 /* UserCell.swift */; };
 		9CC3ED4926F7BF28009BD6E7 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */; };
 		9CC3ED5026F8669F009BD6E7 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4F26F8669F009BD6E7 /* UserDetailViewController.swift */; };
+		9CC3ED5426F87570009BD6E7 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED5326F87570009BD6E7 /* TabViewController.swift */; };
+		9CC3ED5726F8788C009BD6E7 /* SwipeableTabBarController in Frameworks */ = {isa = PBXBuildFile; productRef = 9CC3ED5626F8788C009BD6E7 /* SwipeableTabBarController */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,7 @@
 		9CC3ED4426F7BD20009BD6E7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
 		9CC3ED4F26F8669F009BD6E7 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		9CC3ED5326F87570009BD6E7 /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC3ED5726F8788C009BD6E7 /* SwipeableTabBarController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +93,7 @@
 				9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */,
 				9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */,
 				9CC3ED4F26F8669F009BD6E7 /* UserDetailViewController.swift */,
+				9CC3ED5326F87570009BD6E7 /* TabViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -147,6 +152,9 @@
 			dependencies = (
 			);
 			name = PLDemoGitHub;
+			packageProductDependencies = (
+				9CC3ED5626F8788C009BD6E7 /* SwipeableTabBarController */,
+			);
 			productName = PLDemoGitHub;
 			productReference = 9CC3ED2126F63A79009BD6E7 /* PLDemoGitHub.app */;
 			productType = "com.apple.product-type.application";
@@ -174,6 +182,9 @@
 				Base,
 			);
 			mainGroup = 9CC3ED1826F63A79009BD6E7;
+			packageReferences = (
+				9CC3ED5526F8788C009BD6E7 /* XCRemoteSwiftPackageReference "SwipeableTabBarController" */,
+			);
 			productRefGroup = 9CC3ED2226F63A79009BD6E7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC3ED5426F87570009BD6E7 /* TabViewController.swift in Sources */,
 				9CC3ED2926F63A79009BD6E7 /* ViewController.swift in Sources */,
 				9CC3ED2526F63A79009BD6E7 /* AppDelegate.swift in Sources */,
 				9CC3ED4326F7B61F009BD6E7 /* PhotoManager.swift in Sources */,
@@ -415,6 +427,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9CC3ED5526F8788C009BD6E7 /* XCRemoteSwiftPackageReference "SwipeableTabBarController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marcosgriselli/SwipeableTabBarController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.4.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9CC3ED5626F8788C009BD6E7 /* SwipeableTabBarController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9CC3ED5526F8788C009BD6E7 /* XCRemoteSwiftPackageReference "SwipeableTabBarController" */;
+			productName = SwipeableTabBarController;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9CC3ED1926F63A79009BD6E7 /* Project object */;
 }

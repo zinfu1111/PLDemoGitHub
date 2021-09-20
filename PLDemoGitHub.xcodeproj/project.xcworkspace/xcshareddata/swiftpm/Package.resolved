@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwipeableTabBarController",
+        "repositoryURL": "https://github.com/marcosgriselli/SwipeableTabBarController.git",
+        "state": {
+          "branch": null,
+          "revision": "f90f5142a9cd119f8929cec1bfcf78aa0a2f2e8f",
+          "version": "3.4.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

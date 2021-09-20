@@ -29,9 +29,7 @@ class UsersViewController: BaseViewController {
     @IBSegueAction func showDetail(_ coder: NSCoder) -> UserDetailViewController? {
         guard let selectedUser = selectedUser
         else {
-            print("debug123")
             return nil
-            
         }
         return UserDetailViewController(coder: coder, userData: selectedUser)
     }
@@ -41,7 +39,7 @@ extension UsersViewController {
     
     func fetchData() {
         let since = userData.last?.id ?? 0
-        userManager.sendRequest(addPath: "?per_page=\(20)&since=\(since)",method: .get, reponse: [User.List].self, completion: setupUsersData(result:))
+        userManager.sendRequest(addPath: "?per_page=\(100)&since=\(since)",method: .get, reponse: [User.List].self, completion: setupUsersData(result:))
     }
     
     func setupUsersData(result: Result<[User.List],Error>) {

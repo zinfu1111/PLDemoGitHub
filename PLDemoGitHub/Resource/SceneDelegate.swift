@@ -25,7 +25,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 print("\(#function) success \(user)")
                 DispatchQueue.main.async {
                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                    let controller = storyboard.instantiateViewController(withIdentifier: "TabBarViewController")
+                    let controller = storyboard.instantiateViewController(withIdentifier: "\(TabViewController.self)") as! TabViewController
                     let window = UIWindow(windowScene: windowScene)
                     window.rootViewController = controller
                     self.window = window

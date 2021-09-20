@@ -118,10 +118,10 @@
             </objects>
             <point key="canvasLocation" x="2383.1999999999998" y="-127.28635682158921"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab View Controller-->
         <scene sceneID="TqW-er-wDz">
             <objects>
-                <tabBarController storyboardIdentifier="TabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N9f-Wt-muI" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="N9f-Wt-muI" customClass="TabViewController" customModule="PLDemoGitHub" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ssf-tX-szv">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
