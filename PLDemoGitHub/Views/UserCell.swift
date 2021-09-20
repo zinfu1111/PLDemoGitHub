@@ -26,6 +26,11 @@ class UserCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        self.photoImageView.layer.cornerRadius = self.photoImageView.frame.height/2
+    }
+    
     func set(data: User.List){
         self.data = data
         self.loginLabel.text = data.login
@@ -33,7 +38,7 @@ class UserCell: UITableViewCell {
         downloadPhoto()
     }
     
-    func downloadPhoto() {
+    private func downloadPhoto() {
         let id = data.id
         PhotoManager.shared.downloadImage(url: data.avatar_url) { [weak self] image in
             DispatchQueue.main.async {
