@@ -20,6 +20,7 @@
 		9CC3ED4326F7B61F009BD6E7 /* PhotoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4226F7B61F009BD6E7 /* PhotoManager.swift */; };
 		9CC3ED4526F7BD20009BD6E7 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4426F7BD20009BD6E7 /* UserCell.swift */; };
 		9CC3ED4926F7BF28009BD6E7 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */; };
+		9CC3ED5026F8669F009BD6E7 /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC3ED4F26F8669F009BD6E7 /* UserDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9CC3ED4226F7B61F009BD6E7 /* PhotoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoManager.swift; sourceTree = "<group>"; };
 		9CC3ED4426F7BD20009BD6E7 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		9CC3ED4F26F8669F009BD6E7 /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				9CC3ED3E26F78526009BD6E7 /* MineViewController.swift */,
 				9CC3ED4026F78B06009BD6E7 /* BaseViewController.swift */,
 				9CC3ED4826F7BF28009BD6E7 /* UsersViewController.swift */,
+				9CC3ED4F26F8669F009BD6E7 /* UserDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 				9CC3ED4926F7BF28009BD6E7 /* UsersViewController.swift in Sources */,
 				9CC3ED4126F78B06009BD6E7 /* BaseViewController.swift in Sources */,
 				9CC3ED3F26F78526009BD6E7 /* MineViewController.swift in Sources */,
+				9CC3ED5026F8669F009BD6E7 /* UserDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

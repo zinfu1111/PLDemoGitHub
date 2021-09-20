@@ -17,6 +17,7 @@ class UsersViewController: BaseViewController {
     }
     
     var userData = [User.List]()
+    var selectedUser:User.Detail?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,19 @@ class UsersViewController: BaseViewController {
         // Do any additional setup after loading the view.
         fetchData()
     }
+    
+    @IBSegueAction func showDetail(_ coder: NSCoder) -> UserDetailViewController? {
+        guard let selectedUser = selectedUser
+        else {
+            print("debug123")
+            return nil
+            
+        }
+        return UserDetailViewController(coder: coder, userData: selectedUser)
+    }
+    
+}
+extension UsersViewController {
     
     func fetchData() {
         let since = userData.last?.id ?? 0
@@ -43,7 +57,22 @@ class UsersViewController: BaseViewController {
             print("\(#function) failure \(error.localizedDescription)")
         }
     }
+    
+    func setupUserData(result: Result<User.Detail,Error>) {
+        
+        switch result {
+        case .success(let data):
+            self.selectedUser = data
+            print("\(#function) success \(self.selectedUser)")
+            DispatchQueue.main.async {
+                self.performSegue(withIdentifier: "showDetail", sender: nil)
+            }
+        case .failure(let error):
+            print("\(#function) failure \(error.localizedDescription)")
+        }
+    }
 }
+
 extension UsersViewController: UITableViewDataSource,UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if userData.count > 0 {
@@ -63,6 +92,12 @@ extension UsersViewController: UITableViewDataSource,UITableViewDelegate {
         
         cell.set(data: userData[indexPath.row])
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedData = userData[indexPath.row]
+        userManager.sendRequest(addPath:"/\(selectedData.login)",method: .get, reponse: User.Detail.self, completion: setupUserData(result:))
+        
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
