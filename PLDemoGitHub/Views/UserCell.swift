@@ -13,7 +13,7 @@ class UserCell: UITableViewCell {
     @IBOutlet weak var loginLabel: UILabel!
     @IBOutlet weak var typeLabel: UILabel!
     
-    private var data:User.List!
+    private var viewModel:User.List!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,18 +31,18 @@ class UserCell: UITableViewCell {
         self.photoImageView.layer.cornerRadius = self.photoImageView.frame.height/2
     }
     
-    func set(data: User.List){
-        self.data = data
-        self.loginLabel.text = data.login
-        self.typeLabel.text = data.type
+    func set(viewModel: User.List){
+        self.viewModel = viewModel
+        self.loginLabel.text = viewModel.login
+        self.typeLabel.text = viewModel.type
         downloadPhoto()
     }
     
     private func downloadPhoto() {
-        let id = data.id
-        PhotoManager.shared.downloadImage(url: data.avatar_url) { [weak self] image in
+        let id = viewModel.id
+        PhotoManager.shared.downloadImage(url: viewModel.avatar_url) { [weak self] image in
             DispatchQueue.main.async {
-                guard let self = self,self.data.id == id else { return }
+                guard let self = self,self.viewModel.id == id else { return }
                 self.photoImageView.image = image
             }
         }

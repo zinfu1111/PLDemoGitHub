@@ -39,7 +39,7 @@ extension UsersViewController {
     
     func fetchData() {
         let since = userData.last?.id ?? 0
-        userManager.sendRequest(addPath: "?per_page=\(100)&since=\(since)",method: .get, reponse: [User.List].self, completion: setupUsersData(result:))
+        userManager.sendRequest(addPath: "?per_page=\(50)&since=\(since)",method: .get, reponse: [User.List].self, completion: setupUsersData(result:))
     }
     
     func setupUsersData(result: Result<[User.List],Error>) {
@@ -88,7 +88,7 @@ extension UsersViewController: UITableViewDataSource,UITableViewDelegate {
             return UITableViewCell()
         }
         
-        cell.set(data: userData[indexPath.row])
+        cell.set(viewModel: userData[indexPath.row])
         return cell
     }
     
